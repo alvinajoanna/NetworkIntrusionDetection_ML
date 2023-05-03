@@ -1,10 +1,11 @@
 .navbar {
   background-color: #172f44;
-  height: 100%;
-  position: fixed;
+  height: 100vh;
+  /* position: fixed; */
   top: 0;
   left: 0;
   width: 250px;
+  /* width: 20%; */
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 20px;
