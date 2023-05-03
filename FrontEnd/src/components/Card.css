@@ -1,0 +1,14 @@
+.card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 40px; /* increase padding to make the cards bigger */
+  border-radius: 5px;
+  width: calc(33.33% - 20px); /* decrease width to fit 3 cards in a row */
+  height: 300px; /* set a fixed height for the cards */
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+
+.card:last-child {
+  margin-right: 0;
+}

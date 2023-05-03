@@ -1,0 +1,25 @@
+
+import './App.css';
+import Home from './components/home';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+
+function App() {
+
+  return (
+    <div className="App">
+      NIXON LOW
+{/* FIXED */}
+
+      <BrowserRouter>
+      <Routes>
+        <Route element={<Home />} path="nixon" />
+
+        </Routes>
+      </BrowserRouter>
+      {/* BASED ON */}
+    </div>
+  );
+}
+
+export default App;

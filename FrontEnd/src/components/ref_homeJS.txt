@@ -1,0 +1,48 @@
+import React from "react";
+import { useState } from "react";
+import '../App.css'
+import logo from '../logo.svg';
+
+function Home() {
+
+
+    //const [name, setName] = useState("Nixon");
+
+    //var name2 = "NIXON";
+
+    //const namechange = () => {
+        //setName("AAMER");
+    //}
+
+    return (
+
+        <div>
+            <Alert ></Alert>
+
+            <header className="App-header">
+                <img src={logo} className="App-logo" alt="logo" />
+                <p onClick={namechange}>
+                    <input type="text" id="inputtag" />
+
+                    {name}
+                    <br></br>
+                    {name2}
+                </p>
+                <a
+                    className="App-link"
+                    href="https://reactjs.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Learn React
+                </a>
+            </header>
+
+
+
+        </div>
+    );
+
+}
+
+export default Home;
