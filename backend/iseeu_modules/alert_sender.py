@@ -31,4 +31,4 @@ def alert_emailer(details):
         mail_server.sendmail(sender_email, emails, message.as_string())
 
     print("Email sent")
-    return "Email sent"
+    return {"message": "Email sent"}

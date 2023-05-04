@@ -1,0 +1,122 @@
+:root {
+  --primary-color-lm: white;
+  --secondary-color-lm: #f5f5f8;
+  --primary-color-dm: #141B34;
+  --secondary-color-dm: #20244C; 
+  --card-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.08);
+}
+
+.title-text:hover{
+  cursor: pointer;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+foreignObject{
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.alarms:hover{
+  cursor: pointer;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.alarms:active{
+  box-shadow: none;
+}
+
+.alarms-dim-bg{
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.alarms-container{
+  background-color: white;
+  width: 500px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.alarms-container-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--primary-color-dm);
+}
+
+.alarms-title{
+  font-size: 24px;
+}
+
+.alarms-holder{
+  padding: 20px 0 20px 0;
+  max-height: 500px;
+  overflow: auto;
+}
+
+.alarm-card{
+  border-radius: 5px;
+  padding: 0px 10px 0px 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(32, 36, 76, 0.1);
+}
+
+.alarm-number{
+  width: 60px;
+  height: 50px;
+  background-color: var(--primary-color-dm);
+  color: white;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alarm-card-left{
+  padding: 10px;
+  width: 100%;
+}
+
+.alarm-attacktype{
+  font-size: 18px;
+  font-weight: 200;
+  color: var(--secondary-color-dm);
+}
+
+.alarm-datetime{
+  font-size: 12px;
+  color: var(--primary-color-dm);
+}
+
+
+.alarm-card:hover{
+  cursor: pointer;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.06);
+}
+
+.alarm-card:active{
+  box-shadow: none;
+}
+
+.close-btn{
+  width: 100%;
+  margin-top: 20px;
+}
+

@@ -1,0 +1,123 @@
+:root {
+    --theme-color: #20244C;
+}
+
+body {
+    font-family: "Segoe UI"
+}
+
+.top-nav-landing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    font-size: 56px;
+    font-weight: bold;
+    height: 100%;
+    transition: 1s ease;
+    color: #707070;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo:hover {
+    cursor: pointer;
+}
+
+#site-section {
+    color: var(--theme-color)
+}
+
+#nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    height: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: 500ms ease;
+}
+
+.nav-item>a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-item {
+    padding-left: 40px;
+}
+
+.nav-item>a:hover {
+    color: var(--theme-color);
+}
+
+nav {
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    /* border-bottom: 1px solid var(--theme-color); */
+    /*    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);*/
+}
+
+header {
+    top: 0;
+    position: sticky;
+    background-color: white;
+    z-index: 2;
+}
+
+#menu-bars {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 25px;
+    display: none;
+    z-index: 3;
+}
+
+#menu-bars>i {
+    font-size: 36px;
+    color: #000;
+}
+
+#menu-bars>i:hover {
+    color: var(--theme-color);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 567px) {
+    .nav-logo {
+        font-size: 28px;
+        padding: 20px 0 20px 0;
+    }
+    #menu-bars>i {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #menu-bars {
+        display: block;
+    }
+    nav,
+    .nav-logo,
+    #nav-links {
+        height: auto;
+    }
+    #nav-links {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+    }
+    .nav-item {
+        padding: 5px;
+        width: 100%;
+        text-align: left;
+    }
+}
