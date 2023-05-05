@@ -12,7 +12,7 @@ def alert_emailer(details):
     emails = pd.read_csv("data/emails.csv")['email'].values
 
     # sending alert email
-    sender_email = "bmbvfx@gmail.com"
+    sender_email = "example@gmail.com"
     print(emails)
 
     # creating message container
@@ -27,7 +27,7 @@ def alert_emailer(details):
     # sending email
     with smtplib.SMTP("smtp.gmail.com", 587) as mail_server:
         mail_server.starttls()
-        mail_server.login(sender_email, "xnfpttfqsjcrjydn")
+        mail_server.login(sender_email, "add password here")
         mail_server.sendmail(sender_email, emails, message.as_string())
 
     print("Email sent")

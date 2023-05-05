@@ -530,7 +530,7 @@ function App() {
                   <FontAwesomeIcon icon={faGift} />
                 </div>
                 <div className="card-value">{firstRowCardValues.packets_fwd.toString().padStart(2, '0')}</div>
-                <div className="card-title">PACKAGES (fwd)</div>
+                <div className="card-title">PACKETS (fwd)</div>
               </div>
             </div>
             {/* Card 1 end */}
@@ -541,7 +541,7 @@ function App() {
                   <FontAwesomeIcon icon={faGift} />
                 </div>
                 <div className="card-value">{firstRowCardValues.packets_bwd.toString().padStart(2, '0')}</div>
-                <div className="card-title">PACKAGES (bwd)</div>
+                <div className="card-title">PACKETS (bwd)</div>
               </div>
             </div>
             {/* Card 1 end */}
@@ -564,7 +564,7 @@ function App() {
           <div className="row">
             <div className="col-lg-4">
               <div className="second-row-card">
-                {Charts("AveragePacketSize", "AVERAGE PACKAGE SIZE", [{ name: "AveragePacketSize", data: dataMap.AveragePacketSize != null ? Object.values(dataMap.AveragePacketSize).slice(-100) : [] }])}
+                {Charts("AveragePacketSize", "AVERAGE PACKET SIZE", [{ name: "AveragePacketSize", data: dataMap.AveragePacketSize != null ? Object.values(dataMap.AveragePacketSize).slice(-100) : [] }])}
               </div>
             </div>
             <div className="col-lg-4">
